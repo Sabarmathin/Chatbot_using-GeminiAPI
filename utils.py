@@ -2,7 +2,7 @@ import google.generativeai as genai
 import json
 
 # ✅ Set your Gemini API Key
-genai.configure(api_key="AIzaSyDJaylop8DhlBJsqHU7NdVOFNmOu7p23Dw")  # Replace with your actual API key
+genai.configure(api_key="")  # Replace with your actual API key
 
 # ✅ Initialize Gemini Model (gemini-3.1-flash-lite-preview)
 model = genai.GenerativeModel("gemini-3.1-flash-lite-preview")  
@@ -96,7 +96,7 @@ step_6_system_message_content = f"""
 step_6_system_message = {'role':'system', 'content': step_6_system_message_content}    
 
 def get_completion_from_messages(messages, model="gemini-3.1-flash-lite-preview", temperature=0.7, max_tokens=500):
-    genai.configure(api_key="AIzaSyDJaylop8DhlBJsqHU7NdVOFNmOu7p23Dw")  # Replace with your actual API key
+    genai.configure(api_key="")  # Replace with your actual API key
 
     client = genai.GenerativeModel(model_name=model)  # Initialize Gemini model
 
